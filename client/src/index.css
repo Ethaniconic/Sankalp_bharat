@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --saffron: #ff9933;
+  --orange: #ff6a00;
+  --green: #138808;
+  --ink: #0b1220;
+
+  color-scheme: light;
+  background: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme='dark'] {
+  --ink: #e2e8f0;
+  color-scheme: dark;
+  background: #0b1220;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(900px 500px at 10% 110%, rgba(19, 136, 8, 0.16), transparent 60%),
+    radial-gradient(900px 500px at 10% -10%, rgba(255, 153, 51, 0.18), transparent 60%),
+    linear-gradient(180deg, rgba(255, 153, 51, 0.05), rgba(255, 255, 255, 0.95) 40%, rgba(19, 136, 8, 0.05));
+}
+
+html[data-theme='dark'] body {
+  background:
+    radial-gradient(900px 500px at 10% 110%, rgba(19, 136, 8, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 10% -10%, rgba(255, 153, 51, 0.12), transparent 60%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.98));
+}
+
+html[data-theme='dark'] .text-slate-900 { color: #f8fafc; }
+html[data-theme='dark'] .text-slate-800 { color: #e2e8f0; }
+html[data-theme='dark'] .text-slate-700 { color: #cbd5e1; }
+html[data-theme='dark'] .text-slate-600 { color: #94a3b8; }
+html[data-theme='dark'] .text-slate-500 { color: #94a3b8; }
+html[data-theme='dark'] .text-slate-950 { color: #f8fafc; }
+
+html[data-theme='dark'] .bg-white { background-color: rgba(15, 23, 42, 0.9); }
+html[data-theme='dark'] .bg-white\/70 { background-color: rgba(15, 23, 42, 0.7); }
+html[data-theme='dark'] .bg-white\/80 { background-color: rgba(15, 23, 42, 0.8); }
+html[data-theme='dark'] .bg-white\/90 { background-color: rgba(15, 23, 42, 0.9); }
+html[data-theme='dark'] .bg-black\/5 { background-color: rgba(255, 255, 255, 0.06); }
+html[data-theme='dark'] .bg-black\/10 { background-color: rgba(255, 255, 255, 0.1); }
+html[data-theme='dark'] .border-black\/10 { border-color: rgba(148, 163, 184, 0.25); }
+
+html[data-theme='dark'] .navbar-surface {
+  background: linear-gradient(90deg, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.92));
+  box-shadow: 0 8px 24px -12px rgba(15, 23, 42, 0.7);
+}
+
+html[data-theme='dark'] .theme-toggle {
+  background-color: rgba(15, 23, 42, 0.75);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+html[data-theme='dark'] .theme-toggle-icon {
+  color: #e2e8f0;
+}
+
+html[data-theme='dark'] .theme-toggle-sun {
+  color: #fbbf24;
+}
+
+#root {
+  min-height: 100%;
+}
